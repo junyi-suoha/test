@@ -1,0 +1,132 @@
+<div class="ui-page">
+            <div class="ui-page-mid">
+                <p class="ui-page-tag">共条记录，每页条，当前第/页</p>
+                <div class="ui-page-nav">
+                    <ul class="ui-page-nav-style" >
+                         <li><a class="ui-page-link" href="javascript:void(0)" ng-click="page(1)" >第一页</a></li>
+                         <li><a class="ui-page-link" href="javascript:void(0)" ng-click="prevPage()">上一页</a></li>
+                         <li><a class="ui-page-link" href="javascript:void(0)" ng-click="nextPage()">下一页</a></li>
+                         <li><a class="ui-page-link" href="javascript:void(0)" ng-click="page({{pageCount}})">最末页</a></li>
+                    </ul>
+                </div>
+                    <div class="ui-page-box">
+                        <span class="ui-page-box-tab">转到第</span>
+                        <input class="ui-page-box-blank" ng-model="nowpage">
+                        <span class="ui-page-tam">页</span>&nbsp
+                        <a class="ui-page-jump" href="javascript:void(0)" ng-click="page()">跳转</a>
+                    </div>
+              </div>
+           </div>
+
+
+        /*翻页部分*/
+.ui-page
+{
+    width:100%;
+    height:95px;
+    background:#fff;
+}
+.ui-page-mid
+{
+    width:720px;
+    height:25px;
+    margin:0 auto;
+    padding:35px 0;
+}
+.ui-page-tag
+{
+    width:247px;
+    float:left;
+    line-height:25px;
+    font-family:"宋体";
+    font-size:14px;
+    color:#333;
+}
+.ui-page-nav
+{
+    width:280px;
+    float:left;
+    margin:0 10px;
+    line-height:30px;
+}
+.ui-page-box-tab
+{
+    width:40px;
+    font-family:"宋体";
+    font-size:14px;
+    color:#333;
+}
+.ui-page-tam
+{
+    width:20px;
+    font-family:"宋体";
+    font-size:14px;
+    color:#333;
+}
+
+.ui-page-nav-style
+{
+    list-style-type:none;
+}
+.ui-page-nav-style li
+{
+   float:left;   
+ }
+.ui-page-link
+{
+    width:55px;
+    height:25px;
+    float:left;
+    line-height:35px;
+    text-align:center;
+    font-family:"微软雅黑";
+    font-size:13px;
+    line-height:28px;
+    color:#333;
+    text-decoration:none;
+    overflow:hidden;
+    border:1px solid #e6e6e6;
+    margin:0 6px;
+}
+.ui-page-box
+{
+    display:inline;
+    width:130px;
+    height:100%;
+    overflow:hidden;
+}
+
+.ui-page-box-blank
+{
+    display:inline;
+    width:35px;
+    height:20px;
+    border:1px solid #c4c4c4;
+    background:#f3f3f3;
+    text-align:center;
+}
+.ui-page-jump
+{
+    display:inline;
+    width:36px;
+    height:25px;
+    float:right;
+    margin-right:20px;
+    background:#999fa2;
+    line-height:25px;
+    text-align:center;
+    font-family:"微软雅黑";
+    font-size:13px;
+    color:#333;
+    text-decoration:none;
+}
+.ui-page-link:hover
+{
+    background:#48a63e;
+    color:#fff;
+}
+.ui-page-jump:hover
+{
+    background:#48a63e;
+    color:#fff;
+}
